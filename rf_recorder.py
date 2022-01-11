@@ -1,5 +1,3 @@
-import sys
-
 import paho.mqtt.client as mqtt
 
 
@@ -29,4 +27,3 @@ try:
     client.loop_forever()
 except KeyboardInterrupt:
     LOG_FILE.close()
-    sys.exit()
